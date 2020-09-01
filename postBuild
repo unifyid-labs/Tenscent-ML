@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -exo pipefail
+
 readonly MODEL_URL='https://storage.googleapis.com/unifyid-ml-vcm/models/tencent-ml-images/checkpoints/model.ckpt.tar.gz'
 readonly MODEL_DIR='/home/jovyan/checkpoints'
 
