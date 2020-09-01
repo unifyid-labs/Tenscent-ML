@@ -12,8 +12,6 @@ from __future__ import print_function
 import sys
 sys.path.insert(0, '../')
 
-from flags import FLAGS
-
 import tensorflow as tf
 
 class ResNet(object):

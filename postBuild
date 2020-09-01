@@ -5,7 +5,7 @@ set -exo pipefail
 readonly MODEL_URL='https://storage.googleapis.com/unifyid-ml-vcm/models/tencent-ml-images/checkpoints/model.ckpt.tar.gz'
 readonly MODEL_DIR='/home/jovyan/checkpoints'
 
-mkdir -p "${MODEL_DIR}"
+mkdir -p "${MODEL_DIR}" || true
 curl -LSs "${MODEL_URL}" | tar -C "${MODEL_DIR}" -xvzf-
 
 # vi: ft=sh
