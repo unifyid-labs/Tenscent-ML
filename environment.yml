@@ -4,6 +4,9 @@ channels:
 - defaults
 dependencies:
 - python=2.7.15
+- nodejs=12
+- ipympl
+- ipywidgets
 - matplotlib
 - notebook
 - numpy
