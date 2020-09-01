@@ -8,14 +8,6 @@ readonly MODEL_DIR='/home/jovyan/checkpoints'
 mkdir -p "${MODEL_DIR}"
 curl -LSs "${MODEL_URL}" | tar -C "${MODEL_DIR}" -xvzf-
 
-
-jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
-
-jupyter contrib nbextension install --user
-jupyter nbextension install --py --symlink ipympl
-jupyter nbextension enable --py ipympl
-jupyter nbextension enable --py widgetsnbextension
-
-jupyter lab build
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 # vi: ft=sh
