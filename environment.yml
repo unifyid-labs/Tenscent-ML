@@ -3,9 +3,9 @@ channels:
 - conda-forge
 - defaults
 dependencies:
-- python=2.7
+- python=2.7.18
 - matplotlib
 - notebook
 - numpy
-- opencv-python
+- opencv
 - tensorflow=1.6.0
