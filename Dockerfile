@@ -15,11 +15,7 @@ RUN set -ex \
     && adduser --disabled-password \
         --gecos "Default user" \
         --uid ${NB_UID} ${NB_USER} \
-    && chown -R ${NB_UID} ${HOME}
-
-USER ${USER}
-
-RUN set -ex \
+    && chown -R ${NB_UID} ${HOME} \
     && pip install --no-cache --upgrade pip setuptools wheel \
     && pip install --no-cache \
         jupyterlab \
@@ -29,4 +25,5 @@ RUN set -ex \
         opencv-python \
         tensorflow==1.6.0
 
+USER ${USER}
 WORKDIR ${HOME}
