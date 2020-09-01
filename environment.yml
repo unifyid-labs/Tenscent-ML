@@ -1,0 +1,11 @@
+name: tenscent
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python=3.6.9
+- matplotlib
+- notebook
+- numpy
+- opencv-python
+- tensorflow=1.6.0
