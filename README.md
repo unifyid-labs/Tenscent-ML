@@ -1,5 +1,6 @@
 # Tenscent ML Images
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/unifyid-labs/Tenscent-ML.git/master?urlpath=lab/tree/index.ipynb) ![GitHub last commit](https://img.shields.io/github/last-commit/unifyid-labs/Tenscent-ML) [![Python](https://img.shields.io/badge/Python-v2.7-blue)](https://img.shields.io/badge/Python-v2.7-blue) [![Tensorflow](https://img.shields.io/badge/Tensorflow-v1.6.0-brightgreen)](https://img.shields.io/badge/Python-v2.7-blue)
+
+[![Python](https://img.shields.io/badge/Python-v2.7-blue)](https://img.shields.io/badge/Python-v2.7-blue) [![Tensorflow](https://img.shields.io/badge/Tensorflow-v1.6.0-brightgreen)](https://img.shields.io/badge/Python-v2.7-blue)
 
 ----
 
@@ -18,3 +19,6 @@ Run on binder to start notebook with Python and tensorflow dependencies installe
 | `images`      | Images to run inference over              |
 | `data`        | Label definitions for 10k                 |
 
+# Checkpoints
+
+Checkpoint files can be downloaded from [this](https://storage.googleapis.com/unifyid-ml-vcm/models/tencent-ml-images/checkpoints/model.ckpt.tar.gz) bucket.
