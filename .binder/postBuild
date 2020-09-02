@@ -8,6 +8,6 @@ readonly MODEL_DIR='/home/jovyan/checkpoints'
 mkdir -p "${MODEL_DIR}" || true
 curl -LSs "${MODEL_URL}" | tar -C "${MODEL_DIR}" -xvzf-
 
-jupyter lab build -y --dev-build=False
+jupyter lab build
 
 # vi: ft=sh
