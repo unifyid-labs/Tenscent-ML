@@ -5,7 +5,7 @@ set -exo pipefail
 readonly MODEL_URL='https://storage.googleapis.com/unifyid-ml-vcm/models/tencent-ml-images/checkpoints/model.ckpt.tar.gz'
 
 mkdir -p "/home/${NB_USER}/checkpoints"
-curl -LSs "${MODEL_URL}" | tar -C "/home/${NB_USER}/checkpoints" -xvzf-
+curl -LS "${MODEL_URL}" | tar -C "/home/${NB_USER}/checkpoints" -xzf-
 
 jupyter lab build || true
 
